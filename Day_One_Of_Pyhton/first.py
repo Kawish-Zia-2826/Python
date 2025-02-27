@@ -77,3 +77,14 @@ for x in name:
 
   print(f"the price of {price:.2f}")
 
+
+  arr = ["a","b","c"]
+  newlist = [x for x in arr if "a" in x]
+  # print(newlist)
+  arr.sort(reverse = True)
+  print(arr)
+
+  # for x  in arr:
+  #   if "a" in x:
+  #     print(x)
+
