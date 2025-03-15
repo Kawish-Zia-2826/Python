@@ -78,9 +78,23 @@ print("pyhton is working")
 #         print("its the continue loop")
 #         continue
 #     print(i+1)
-i  =  1
-while True:
-  print(i)
-  i += 1
-  if(100%i == 0):
-    break
+# i  =  1
+# while True:
+#   print(i)
+#   i += 1
+#   if(100%i == 0):
+#     break
+# def greet(name):
+#   print("Hello, " + name)
+# greet("John")
+
+# def add(a,b):
+#   print(a+b)
+# add(5,6)
+
+
+# list = ['1',2,3,4,5,6]
+# print(list[-6])  # prints 1
+
+list   = [ i for i in range(5)]
+print(list)
