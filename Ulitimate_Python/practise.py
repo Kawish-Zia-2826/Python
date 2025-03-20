@@ -335,11 +335,91 @@ myfamliy = {
 # c  = 9  if 3> 2 else 0
 # print(c)
 
-list = [1,2,3,2,2,3,23,213,21,32,13,21,321,3,123]
-for index, x in enumerate( list):
-  # print(x)
-  print(index)
+# list = [1,2,3,2,2,3,23,213,21,32,13,21,321,3,123]
+# for index, x in enumerate( list):
+#   # print(x)
+#   print(index)
+
+
+# from math import sqrt as s 
+# import math as m 
+
+# print(m.sqrt(9))
+
+
+# print(dir(m))
+
+
+# from module import welcome,kawish
+# from module import *
+
+
+# welcome()
+
+
+# import module
+
+import os
+
+
+# print(os.getcwd())
+
+# os.mkdir("new")
+# os.isfile(os.getcwd() + "\nawa")
+# os.rmdir("newagain")
+
+# x = 10
+# def abc():
+#   global x
+#   x = 4
+#   print(x)
+
+# # abc()
+# print(x)
+# file  = open('text.txt','r')
+# content = file.read()
+# print(content)
+# file.close()
+
+# with open('text.txt','a') as file:
+#   file.write("dsfdsf")
+
+
+# file  = open('text.txt','w')
+# with open('text.txt','a') as file :
+#     file.write("thie is some text\n")
+
+
+
+
+# import os 
+
+# os.remove("text.txt")
+
+
+
+
+# with open("text.txt",'a')as file:
   
+# print(__name__)
 
 
- 
+
+#   print(file.readline())
+
+
+# f = open('text.txt', 'r')
+# while True:
+#     line = f.readline()
+#     if not line:
+#         break
+#     print(line)
+
+
+
+with open('text.txt','r') as file:
+  while True:
+    filee = file.readline()
+    print(filee)
+    if not filee:
+      break
