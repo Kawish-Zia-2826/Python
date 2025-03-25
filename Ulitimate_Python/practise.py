@@ -417,9 +417,591 @@ import os
 
 
 
-with open('text.txt','r') as file:
-  while True:
-    filee = file.readline()
-    print(filee)
-    if not filee:
-      break
+# with open('text.txt','r') as file:
+#   while True:
+#     filee = file.readline()
+#     print(filee)
+#     if not filee:
+#       break
+
+
+# with open('text.txt','r') as f:
+#   f.seek(10)
+#   print(f.tell())
+
+#   print(f.read(5))
+
+
+# with open('sample.txt','w')as file:
+#   file.write("this is some text")
+#   file.truncate(2)
+
+
+
+# def add(x,y):
+#   print("this is add func")
+#   return x+y
+
+
+# def sub(x,y):
+
+# def appl(func,y):
+#   return log(func) + y
+# log = lambda x: x*2 +3
+
+# print(appl(2,2))
+# def add(x,y):
+#   return x *y
+# l = [1,2,3,4,5,6,7,8,9,10]
+# print(list(map(add,2,l)))
+
+
+# from functools import reduce
+
+
+# print(reduce(lambda x,y:x+y,l))
+
+# class person:
+#   name = "kawish"
+#   classs  = "12th"
+#   def info(self):
+#     print(f"this person name is {self.name} and class is {self.classs}")
+
+
+# rizwan = person()
+# rizwan.name = "rizwan"
+# rizwan.classs = "12th"
+
+# rizwan.info()
+
+# mujeeb = person()
+# mujeeb.name = "mujeeb"
+
+# mujeeb.info()
+
+
+# class peson:
+#   def __init__(self,name,classs):
+#     print("this is init func")
+#     self.name = name
+#     self.classs = classs
+#   def info(self):
+#     print(f"this person name is {self.name} and class is {self.classs}")
+
+
+# a = peson("kawihs","12th")
+# a.info()
+
+# def decorator(func):
+#   def wrapper():
+#     print("function call ho gya hai")
+#     func(a,b)
+#   return wrapper
+
+# # @decorator
+# def add(a,b):
+#   print(a+b)
+
+# add(5,5)
+
+
+
+
+
+# def decorator(func):
+#   def wrapper(a,b):
+#     print("function call ho gya hai ")
+#     func(a,b)
+#   return wrapper
+
+
+
+# # @decorator
+# def add(a,b):
+#   print("this is add func")
+#   print(a+b)
+
+# decorator(add)(5,5)
+
+
+# class mycalss:
+#   def __init__(self,n):
+#     self.name = n
+#   def showName(self):
+#       print(f"the name is {self.name}")
+
+#   @property
+#   def namee(self):
+#     return 5*self.name
+  
+#   @namee.setter
+#   def namee(self,n):
+#     self.name = 2*n
+
+# p1 = mycalss(5)
+
+# p1.namee = 5
+# print(p1.namee)
+# print(p1.name)
+
+# print(p1.namee)
+# p1.showName()
+
+
+
+# class calculation:
+#   def __init__(self,a,b):
+#     self._a = a
+#     self._b = b
+#   def add(self):
+#     return self._a + self._b
+#   @property
+#   def a(self):
+#     return self._a *2 + self._b
+#   # @a.setter
+#   # def a(self,newval):
+#     # self.a = self._a * newval + self._b
+# cal1 = calculation(5,5)
+# print(cal1.add())
+# cal1.a  = 10
+# print(cal1.a)
+
+
+
+# class MyClass:
+#   def __init__(self,v):
+#     self.val = v
+#   @property
+#   def getVal(self):
+#       return self.val
+#   @getVal.setter
+#   def getVal(self,v):
+#      self.val  =v  
+
+
+
+
+
+# p1 = MyClass(20)
+# p1.val = 50
+# print(p1.getVal)
+
+
+# class Kawish:
+#     def __init__(self, name):
+#         self.namee = name  # Ensure consistent attribute naming
+
+#     def showName(self):
+#         print(f"This name is {self.namee}")  # Use the correct attribute
+
+#     @property
+#     def getVal(self):  
+#         return self.namee  # Return the correct attribute
+#     @getVal.setter
+#     def getVal(self,nval):
+#         self.namee = nval
+
+# p1 = Kawish("Kawish")
+
+# p1.getVal = "jawad khan"
+
+# print(p1.getVal)  # Access property without parentheses
+
+
+# class emp:
+#   def __init__(self,n,a,i):
+#     self.name = n
+#     self.age = a
+#     self.id = i
+#   def show(self):
+#     print(f"the name is {self.name} and age is {self.age} and id is {self.id}")
+
+
+
+# class manager(emp):
+#   def salary():
+#     print("this is salary func")
+
+
+# p1 = emp("kawish",23,1)
+# p2  = manager("jawad",23,2)
+# p2.show()
+
+# p1.show()
+
+# class p:
+#   def __init__(self):
+#     self._name = "kawish"
+#   def _show(self):
+#     print(self._name) 
+
+# class p1(p):
+#   pass
+
+# p4 = p()
+# print(p4._name)
+
+# p2  = p1()
+# p2._show()
+
+# print(p1._p__name)
+
+
+# class Library:
+#   def __init__(self,booksName ):
+#     self.booksNo = 0
+    
+#     self.booksName  =booksName
+#   def showBooks(self):
+#     print(f"the book no is {self.booksNo} and name is {self.booksName}")
+  
+    
+
+
+# c1 = Library("kawish")
+# c2 = Library("jawad")
+# c3 = Library("asd")
+# c3.showBooks()
+# c1.showBooks()
+# c2.showBooks()
+
+
+# class Library:
+#     def __init__(self):
+#         self.books = 0
+#         self.booksName = []
+#         self.loadBooks()  # File se books load karne ke liye
+
+#     def addBooks(self, n):
+#         self.book = n
+#         self.booksName.append(self.book)
+        
+#         # Book ko file me store karna
+#         with open("books.txt", 'a') as file:
+#             file.write(self.book + "\n")
+
+#         self.books += 1
+#         print(f'Book "{self.book}" added successfully!')
+
+#     def loadBooks(self):
+#         """File se books load karne ke liye"""
+#         try:
+#             with open("books.txt", 'r') as file:
+#                 self.booksName = [line.strip() for line in file.readlines()]
+#                 self.books = len(self.booksName)
+#         except FileNotFoundError:
+#             # Agar file nahi mili to koi masla nahi
+#             self.booksName = []
+#             self.books = 0
+
+#     def showBooks(self):
+#         if self.books == 0:
+#             print("No books available.")
+#         else:
+#             print("\nBooks in Library:")
+#             for book in self.booksName:
+#                 print(f"- {book}")
+#             print(f"\nTotal number of books: {self.books}")
+
+# # Library object
+# c1 = Library()
+
+# # Add book
+# c1.addBooks("adfs")
+
+# # Show books
+# c1.showBooks()
+
+
+# class static:
+#  def __init__ (self):
+#   print("this is static method")
+#  @staticmethod
+#  def show():
+#   print("this is static method")
+
+# a = static()
+
+# static.show()
+
+
+# class car:
+#   carname = "audi"
+#   def __init__(self,name):
+#     self.name = name
+#   def show(self):
+#     print(f"the car name is {self.carname} and the buyer name is {self.name}")
+
+
+# b1 = car("kawish")
+# b2 = car("jawad")
+# b1.carname = "bmw" 
+# car.carname = "new car"
+
+# car.show(b1)  
+# car.show(b2)  
+
+
+# import os
+
+
+
+# for i in range(10):
+#   os.rename(f"new/{i}sadsad")
+
+
+# class car:
+#   carName = "audo"
+#   def show(self):
+#     print(f"this is init func and the emp name is {self.name} and the car name is {self.carName}")
+#   @classmethod
+#   def changeCar(cls,name):
+#     cls.carName = name
+
+
+# e1  = car()
+# e1.name = "kawish"
+
+# e1.show()
+
+# e1.changeCar("bmw")
+# print(e1.carName)
+
+# e1.show()
+
+
+# class person:
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+#   def show(self):
+#     print(f"the name is {self.name} and age is {self.age}")
+#   @classmethod
+#   def fromStr(cls,string):
+#         return cls(string.split('-')[0],string.split('-')[1])
+
+# string =  "kawish-23"
+# p1 = person.fromStr(string)
+# p1.show()
+
+
+
+# class emp:
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+  
+
+# class prog(emp):
+#   def __init__(self,name,age,progLang):
+#     super().__init__(name,age)
+#     self.progLang = progLang
+
+
+
+# p1  = prog("kawish",23,"python")
+# print(p1.name)  
+# print(p1.age)
+
+# # print(p1.__dict__)
+# # print(p1.__dir__)
+
+# string = "sdf"
+
+# # print(dir(string))
+# print(help(emp))
+
+
+# class books:
+#     def __init__(self,n):
+#         self.name = n
+#     def __len__(self):
+#         return len(self.name)
+#     def __str__(self):
+#         return f"this is book auther name"
+#     def __repr__(self):
+#         return "this is repre mrthod "      # ✅ Calls __str__ → Output: Book Name: Kawish
+
+
+# p1 = books("kawish")
+# print(len(p1))  # ✅ Calls __len__ → Output: 6
+# print(str(p1))  # ✅ Calls __str__ → Output: Book Name: Kawish
+# print(repr(p1))  # ✅ Calls __repr__ → Output: Book Name: Kawish
+
+
+
+
+
+# class animal:
+#   def sounds(self):
+#       return "this is animal sound"
+  
+# class sound(animal):
+#    def sound(self):
+#        abc = super().sounds()
+#        return abc + "this is sound of animal"
+   
+
+# a1 = sound()
+# print(a1.sound())
+import os
+
+# folder_path = "C:/Users/PC/Desktop/Python/Ulitimate_Python/clutterFolder"  # Windows
+# # folder_path = "/home/yourname/MyFolder"  # Linux/Mac
+
+# # for i in range(10):
+# #     with open(file_path, 'w') as file:
+# #         file.write("")  # Empty file create karega
+
+# file_path = os.path.join(folder_path, f"text1.png")  # Correct way to join paths
+# print(file_path)
+
+
+# files =os.listdir("./clutterFolder")
+# i = 0
+# for file in files:
+#     # print(file)
+#     if file.endswith(".png"):
+#         print(file)
+#         os.rename(f"clutterFolder/{file}",f"clutterFolder/{i}.png")
+#         i += 1
+
+
+# print(files)
+
+
+# class Vector:
+#   def __init__(self,i,j,k):
+#     self.i = i
+#     self.j = j
+#     self.k = k
+#   def __add__(self,other):
+#     return Vector(self.i + other.i, self.j + other.j, self.k + other.k)
+#   def __str__(self):
+#     return f"Vector({self.i},{self.j},{self.k})"
+
+
+
+# v1 = Vector(1,2,3)
+# v2 = Vector(4,5,6)  
+# print(v1 + v2)
+
+
+
+
+
+# input1 = int(input("enter a num 1"))
+# input2 = int(input("enter a num 2"))
+
+# print("Total",input1 + input2)
+
+
+
+# squre = float(input("enter a side of squre"))
+# inp1 = float(input("enter a side of squre"))
+# inp2 = float(input("enter a side of squre"))
+
+# print("the area of squre is",(inp1 + inp2)/2)
+
+
+# a = "this is the a func"
+
+# print(len(a))
+# print(a.count("i"))
+
+# inp = int(input("enter a num: "))
+# if inp % 2 == 0:
+#   print("even")
+# else:
+
+#   print("odd")
+
+
+# a,b,c = 1,2,3
+# if (a>b and a>c):
+#   print("a is greater")
+# elif (b>c):
+#   print("b is greater")
+# else:
+#   print("c is greater")
+
+# fmovie = input("enter a fav movie")
+# smovie = input("enter a fav movie")
+# tmovie = input("enter a fav movie")
+# list = []
+# list.append(fmovie)
+# list.append(smovie)
+# list.append(tmovie)
+# print(list)
+
+
+# list = [1,2,3,2,1]
+# list2  = list.copy()
+# list2.reverse()
+# # print(list)
+# # print(list2)
+# if list == list2:
+#   print("palindrome")
+# else:
+  # print("not palindrome")
+
+
+# tuple = ("A","B","C","D","E","A","A")
+# list  = list(tuple)
+# list.sort(reverse = True)
+# print(list)
+# print(tuple.count("A"))
+
+
+# dict ={
+#   "name":"kawish",
+#   "study":{
+#     "subject":"math",
+#     "class":"12th"
+
+#   }
+# }
+
+# dict["name"] = "jawad"
+# print(dict)
+
+
+# dict={
+#   "table":["a piece of furnityre","list of fact and fiure"],
+#   "cat":"a small animal"
+  
+# }
+
+# print(dict)
+# set   = {"python","c++","java","c","pyhton","c++","java","html","css"}
+
+
+# print(len(set))
+
+
+# dict = {}
+
+# dict["math"] = 50
+# dict["phy"] = 50
+# dict["chem"] = 50
+
+# print(dict)
+
+
+
+# list = {3,2,3,23,23,23,2,32,3,23,2,32,3}
+# print(len(list))
+# dict = {
+# }
+# dict.update({"chem":45,"com":32})
+
+# print(dict)
+# i  = 100000
+# while i>=1:
+#   print(i)
+#   i-=1
+
+n = 5
+for i,x in enumerate(range(1,11)):
+   i+1
+   print(i*5)
